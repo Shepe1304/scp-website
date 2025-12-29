@@ -4,6 +4,105 @@
 
 @layer base {
   :root {
+    /* Light mode - clean and vibrant */
+    --background: 0 0% 100%;
+    --foreground: 213 27% 24%; /* Dark blue-gray for text */
+    --card: 0 0% 100%;
+    --card-foreground: 213 27% 24%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 27% 24%;
+    
+    /* Primary: Vibrant Red */
+    --primary: 0 100% 43%; /* #da0000 */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Bold Yellow/Gold */
+    --secondary: 45 100% 56%; /* #ffc121 */
+    --secondary-foreground: 213 27% 24%;
+    
+    /* Muted: Soft neutrals */
+    --muted: 0 0% 96%;
+    --muted-foreground: 213 15% 50%;
+    
+    /* Accent: Turquoise/Teal */
+    --accent: 180 60% 45%; /* Teal from palette */
+    --accent-foreground: 0 0% 100%;
+    
+    /* Destructive stays red */
+    --destructive: 0 100% 43%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 100% 43%;
+    
+    /* Chart colors using your palette */
+    --chart-1: 180 60% 45%; /* Teal */
+    --chart-2: 0 100% 43%;  /* Red */
+    --chart-3: 45 100% 56%; /* Yellow */
+    --chart-4: 213 100% 37%; /* Navy blue */
+    --chart-5: 17 100% 54%; /* Orange accent */
+    
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    /* Dark mode - rich and vibrant */
+    --background: 213 27% 12%; /* Dark blue-gray */
+    --foreground: 0 0% 98%;
+    --card: 213 25% 16%;
+    --card-foreground: 0 0% 98%;
+    --popover: 213 25% 16%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Primary: Bright Red for dark mode */
+    --primary: 0 100% 50%; /* Brighter red */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Bright Yellow/Gold */
+    --secondary: 45 100% 60%; /* Brighter yellow */
+    --secondary-foreground: 213 27% 12%;
+    
+    /* Muted: Dark tones */
+    --muted: 213 20% 20%;
+    --muted-foreground: 213 10% 65%;
+    
+    /* Accent: Bright Teal */
+    --accent: 180 65% 50%; /* Brighter teal */
+    --accent-foreground: 213 27% 12%;
+    
+    /* Destructive */
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 213 20% 22%;
+    --input: 213 20% 22%;
+    --ring: 0 100% 50%;
+    
+    /* Chart colors adjusted for dark mode */
+    --chart-1: 180 65% 50%; /* Bright Teal */
+    --chart-2: 0 100% 50%;  /* Bright Red */
+    --chart-3: 45 100% 60%; /* Bright Yellow */
+    --chart-4: 213 80% 55%; /* Lighter blue */
+    --chart-5: 17 100% 60%; /* Bright orange */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -65,4 +164,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
