@@ -44,8 +44,8 @@ export default function Home() {
           </div>
           
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-tight">
-            <span className="text-primary">S</span>
-            <span className="text-secondary">C</span>
+            <span className="text-secondary">S</span>
+            <span className="text-primary">C</span>
             <span className="text-accent">P</span>
           </h1>
           
