@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full border-t border-border py-8 px-6 bg-muted/20">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-4 text-center">
-        <div className="flex items-center gap-6 text-foreground">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-foreground">
           <Link href="#" className="hover:text-primary transition-colors" aria-label="Discord">
             <MessageSquare className="w-5 h-5" />
           </Link>
