@@ -1,34 +1,12 @@
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { Code2, Trophy, Users, Calendar, Zap } from "lucide-react";
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import { Code2, Trophy, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      {/* Navigation */}
-      <nav className="w-full border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center p-4 px-6">
-          <div className="flex items-center gap-2">
-            <Code2 className="w-6 h-6 text-primary" />
-            <span className="font-bold text-xl">SCP</span>
-          </div>
-          <div className="flex items-center gap-6">
-            <Link href="/events" className="hover:text-primary transition-colors font-medium">
-              Events
-            </Link>
-            <Link href="/problems" className="hover:text-primary transition-colors font-medium">
-              Problems
-            </Link>
-            <Link href="/leaderboard" className="hover:text-primary transition-colors font-medium">
-              Leaderboard
-            </Link>
-            <Link href="/about" className="hover:text-primary transition-colors font-medium">
-              About
-            </Link>
-            <ThemeSwitcher />
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center justify-center px-6 py-24 relative overflow-hidden">
@@ -174,32 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full border-t border-border py-8 px-6 bg-muted/20">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <Code2 className="w-5 h-5 text-primary" />
-            <span className="font-semibold">Society of Competitive Programmers</span>
-          </div>
-          
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <Link href="/contact" className="hover:text-foreground transition-colors">
-              Contact
-            </Link>
-            <Link href="/discord" className="hover:text-foreground transition-colors">
-              Discord
-            </Link>
-            <Link href="/github" className="hover:text-foreground transition-colors">
-              GitHub
-            </Link>
-            <ThemeSwitcher />
-          </div>
-        </div>
-        
-        <div className="max-w-6xl mx-auto text-center text-xs text-muted-foreground mt-6">
-          © 2025 SCP at USF. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
