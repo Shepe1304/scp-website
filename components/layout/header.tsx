@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
   { label: "HOME", href: "/" },
-  { label: "EVENTS" },
-  { label: "MEMBERS" },
-  { label: "LINKS" },
-  { label: "ABOUT" },
+  { label: "EVENTS", href: "/events" },
+  { label: "MEMBERS", href: "/members" },
+  { label: "LINKS", href: "/links" },
+  { label: "ABOUT", href: "/about" },
 ];
 
 const SCROLL_THRESHOLD = 0;
