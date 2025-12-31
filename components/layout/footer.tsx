@@ -2,6 +2,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Code2 } from "lucide-react";
 import Link from "next/link";
 
+
 const Footer = () => {
   return (
     <footer className="w-full border-t border-border py-8 px-6 bg-muted/20">
