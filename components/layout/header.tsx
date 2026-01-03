@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { label: "EVENTS", href: "/events" },
   { label: "MEMBERS", href: "/members" },
   { label: "LINKS", href: "/links" },
-  { label: "ABOUT", href: "/about" },
 ];
 
 const SCROLL_THRESHOLD = 0;

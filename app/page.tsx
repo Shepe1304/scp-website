@@ -9,17 +9,13 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="flex-1 flex flex-col items-center justify-center px-6 py-24 relative overflow-hidden">
+      <section className="flex-1 flex flex-col items-center justify-center px-6 py-48 relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 pointer-events-none"></div>
         <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="max-w-5xl text-center space-y-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-2">
-            <Code2 className="w-4 h-4" />
-            <span className="text-sm font-semibold">University of South Florida</span>
-          </div>
           
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-tight">
             <span className="text-secondary">S</span>
