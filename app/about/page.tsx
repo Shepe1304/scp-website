@@ -13,7 +13,7 @@ const NAV_ITEMS = [
 ];
 
 const HIGHLIGHT =
-  "underline underline-offset-4 decoration-primary/60 text-foreground/90";
+  "underline underline-offset-4 decoration-accent/60 text-foreground/90";
 
 const COMPETITIVE_PROGRAMMING_BULLETS = [
   "Solve puzzles with code (algorithms + data structures)",
@@ -44,35 +44,35 @@ const MISSION_CARD_STYLES = [
 
 const ACTIVITIES = [
   {
-    title: "Weekly Hang Out & Learn (Discord)",
-    description: "Casual practice + Q&A.",
+    title: "Weekly Workshops & Hang Out",
+    description: "Weekly programming contests andt Data Structures/Algorithms workshops.",
     icon: MessageSquare,
   },
-  {
-    title: "Workshops & Problem Walkthroughs",
-    description: "Topics led by tech leads (details pending).",
-    icon: Code2,
-  },
-  {
-    title: "Office Hours",
-    description: "Help with problems, concepts, and study plans.",
-    icon: BookOpen,
-  },
+  // {
+  //   title: "Workshops & Problem Walkthroughs",
+  //   description: "Topics led by tech leads (details pending).",
+  //   icon: Code2,   
+  // },
+  // {
+  //   title: "Office Hours",
+  //   description: "Help with problems, concepts, and study plans.",
+  //   icon: BookOpen,
+  // },
   {
     title: "Competitive Building",
-    description: "Challenge sprints; optional offline showcase/presentations.",
+    description: "A Hackathon with a focus on Data Structures and Algorithm application!",
     icon: Users,
   },
   {
     title: "ICPC Preparation",
-    description: "Practice + selection pathway for next year.",
+    description: "Practice and prepare to champion the International Collegiate Programming Contest!",
     icon: Trophy,
   },
-  {
-    title: "SCP Website",
-    description: "Club-built site; internal engineering + contributions welcome.",
-    icon: Code2,
-  },
+  // {
+  //   title: "SCP Website",
+  //   description: "Club-built site; internal engineering + contributions welcome.",
+  //   icon: Code2,
+  // },
 ];
 
 const BENEFITS = [
@@ -269,14 +269,13 @@ export default function AboutPage() {
                       improving job chances.
                     </p>
                     <p className="text-base text-muted-foreground sm:text-lg">
-                      Our alumni have gone on to{" "}
-                      <span className={HIGHLIGHT}>Two Sigma</span>,{" "}
-                      <span className={HIGHLIGHT}>Palantir</span>, and similar
-                      companies. <span className={HIGHLIGHT}>ICPC</span> is a
-                      well-known contest and a strong resume signal; companies
-                      like <span className={HIGHLIGHT}>Google</span>,{" "}
-                      <span className={HIGHLIGHT}>Two Sigma</span>, and{" "}
-                      <span className={HIGHLIGHT}>Microsoft</span> value it.
+                      Our members have gone on to work at top tech firms, notably {" "}
+                      <span className={HIGHLIGHT}>Two Sigma</span> and {" "}
+                      <span className={HIGHLIGHT}>Palantir</span>
+                      <br />
+                      <span className={HIGHLIGHT}>ICPC</span> is a strong resume signal; valued by big companies, including {" "}
+                      <span className={HIGHLIGHT}>Google</span> and{" "}
+                      <span className={HIGHLIGHT}>Microsoft</span>.
                     </p>
                   </div>
 
@@ -294,17 +293,17 @@ export default function AboutPage() {
                     ))}
                   </ul>
 
-                  <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 shadow-sm">
+                  <div className="rounded-2xl border border-secondary/20 bg-secondary/5 p-6 shadow-sm">
                     <h3 className="text-lg font-semibold">
-                      New to this? You belong here.
+                      Don't know where to start? We've got you covered.
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground sm:text-base">
-                      Competitive programming can be intimidating. We're
+                      Competitive programming can be intimidating, which is why we're committed to
                       building a{" "}
                       <span className={HIGHLIGHT}>
                         beginner-friendly club culture
                       </span>
-                      -learn, laugh, and improve together.
+                      {" "} this semester. Let's learn, laugh, and improve together.
                     </p>
                   </div>
                 </div>
