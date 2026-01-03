@@ -51,6 +51,8 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+
+        usfGreen: "hsl(var(--usfGreen) / <alpha-value>)", // Custom USF Green color, adding here so that it can be used with bg-*
       },
       borderRadius: {
         lg: "var(--radius)",

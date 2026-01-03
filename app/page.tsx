@@ -9,18 +9,13 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="flex-1 flex flex-col items-center justify-center px-6 py-24 relative overflow-hidden">
+      <section className="flex-1 flex flex-col items-center justify-center px-6 py-48 relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 pointer-events-none"></div>
         <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="max-w-5xl text-center space-y-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-2">
-            <Code2 className="w-4 h-4" />
-            <span className="text-sm font-semibold">University of South Florida</span>
-          </div>
-          
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-tight">
             <span className="text-secondary">S</span>
             <span className="text-primary">C</span>
@@ -59,7 +54,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-3">Weekly Contests</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Sharpen your skills with practice contests every week. Compete for rankings and prizes while preparing for ICPC and other competitions.
+                Sharpen your skills with practice contests every week while preparing for ICPC and other competitions.
               </p>
             </div>
             
@@ -67,7 +62,7 @@ export default function Home() {
               <div className="w-14 h-14 rounded-xl bg-secondary text-secondary-foreground flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Code2 className="w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">Workshops & Lectures</h3>
+              <h3 className="text-2xl font-bold mb-3">Workshops & Events</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Learn from the best. Our workshops cover everything from basic algorithms to advanced competitive programming techniques.
               </p>
@@ -77,9 +72,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-xl bg-accent text-accent-foreground flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Users className="w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">Active Community</h3>
+              <h3 className="text-2xl font-bold mb-3">Engaging Community</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Join 150+ passionate coders. Get help, share knowledge, and make friends who love solving problems as much as you do.
+                Join a network of passionate coders. Get help, share knowledge, and make friends who love solving problems as much as you do.
               </p>
             </div>
           </div>
@@ -91,7 +86,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold">Upcoming Events</h2>
-            <Link href="/events" className="text-primary hover:underline font-medium">
+            <Link href="/events" className="text-secondary hover:underline font-medium">
               View All →
             </Link>
           </div>

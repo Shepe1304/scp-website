@@ -44,6 +44,9 @@
     --chart-5: 17 100% 54%; /* Orange accent */
     
     --radius: 0.5rem;
+
+    /* Custom colors */
+    --usfGreen: 135 90% 22%;;
   }
   
   .dark {
@@ -85,6 +88,9 @@
     --chart-3: 45 100% 60%; /* Bright Yellow */
     --chart-4: 213 80% 55%; /* Lighter blue */
     --chart-5: 17 100% 60%; /* Bright orange */
+
+    /* Custom colors */
+    --usfGreen: 135 85% 28%;; /* USF Green */
   }
 }
 
