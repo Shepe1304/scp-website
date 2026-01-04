@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 const NAV_ITEMS = [
   { label: "HOME", href: "/" },
   { label: "EVENTS", href: "/events" },
-  { label: "MEMBERS", href: "/members" },
-  { label: "LINKS", href: "/links" },
+  // { label: "MEMBERS", href: "/members" },
   { label: "ABOUT", href: "/about" },
+  { label: "LINKS", href: "/links" },
 ];
 
 const SCROLL_THRESHOLD = 0;
